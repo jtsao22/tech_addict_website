@@ -14,7 +14,8 @@
 
 from django.conf.urls.defaults import *
 
-urlpatterns = patterns('',
+urlpatterns = patterns('tech_blog.views',
+    (r'^$', 'index'),
     # Example:
     # (r'^foo/', include('foo.urls')),
 
