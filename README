@@ -1,2 +1,5 @@
 This is my personal website for blogging, showing off work, and having fun
 coding in python.
+
+To run it locally, run:
+dev_appserver.py jtsao22
