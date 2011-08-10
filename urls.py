@@ -13,10 +13,14 @@
 # limitations under the License.
 
 from django.conf.urls.defaults import *
+from django.views.static import *
+from django.conf import settings
+import os
 
-urlpatterns = patterns('tech_blog.views',
+urlpatterns = patterns('',
     (r'^$', 'index'),
-    # Example:
+    (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT})
+    # Example:;
     # (r'^foo/', include('foo.urls')),
 
     # Uncomment this for admin:
