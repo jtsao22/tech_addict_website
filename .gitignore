@@ -5,3 +5,8 @@ KNOWN_ISSUES
 VERSION
 *.swp
 *.pyc
+.Python
+.project
+.pydevproject
+.DS_Store
+templates/.DS_Store

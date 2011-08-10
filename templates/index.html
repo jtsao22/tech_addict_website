@@ -17,13 +17,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 
     <title>Tech Addict Blog </title>
+    <style>
+        header, section, article, footer, nav, aside { display: block;}
+        #main { background: red; overflow: hidden;}
+        #banner {background: green; clear: both;}
+        #siteInfo {clear: both;}
+        
+    </style>
 </head>
 
 <body id="content">
 
-    <header>
-        <h1> Tech Addict Blog </h1>
-        <nav>
+    <header class="container_24">
+    <h1> <a href="#"> Tech Addict Blog </a> </h1>
+        <nav class="grid_17">
             <ul>
                 <li>
                     <a href="#">HOME</a>
@@ -48,31 +55,31 @@
                 <li>
                     <a href="#">
 <!--                         <img src="img/icons/facebook.png" alt="Facebook" /> -->
-                      <img src="http://lorempixum.com/40/40" alt="Facebook" />
+                      <img src="http://lorempixum.com/35/35" alt="Facebook" />
                     </a>
                 </li>
                 <li>
                     <a href="#">
 <!--                         <img src="img/icons/dribble.png" alt="Dribble" /> -->
-                        <img src="http://lorempixum.com/40/40" alt="Dribble" />
+                        <img src="http://lorempixum.com/35/35" alt="Dribble" />
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="http://lorempixum.com/40/40" alt="Twitter" />
+                        <img src="http://lorempixum.com/35/35" alt="Twitter" />
 <!--                         <img src="imgs/icons/twitter.png" alt="Twitter" /> -->
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="http://lorempixum.com/40/40" alt="Flickr" />
+                        <img src="http://lorempixum.com/35/35" alt="Flickr" />
 <!--                         <img src="imgs/icons/flickr.png" alt="Flickr" /> -->
                     </a>
                 </li>
             </ul>
         </menu>
 
-        <form action="" method="get">
+        <form action="" method="get" class="grid_7">
             <p>
                 Search: <input type="text" name="search" value="" id="search" placeholder="Search"/>
             </p>
@@ -80,7 +87,7 @@
     </header>
 
     <div id="banner-wrap">
-        <div id="banner">
+        <div id="banner" class="container_24">
             <h2> WELCOME TO MY SITE </h2>
             <div id="featured">
               <img src="http://lorempixum.com/800/200/technics" alt="Featured" />
@@ -94,14 +101,14 @@
 
             <button> Learn More </button>
             <button> Our Work </button>
-        </div>
 
         <p id="breadcrumbs">You're here: <a href="#">Home</a> > <a href="#"> Welcome </a> </p>
+        </div>
 
     </div> <!-- end banner-wrap -->
 
-    <div id="main">
-        <div id="primary">
+    <div id="main" class="container_24">
+        <div id="primary" class="grid_15">
             <h3> From the Blog</h3>
             <article>
                 <h2>
@@ -135,7 +142,7 @@
 
             <button> The Blog </button>
         </div>
-        <aside>
+        <aside class="grid_8 prefix_1">
            <ul id="tabHeadings">
                <li>
                    <a href="#comments">Comments</a>
@@ -232,8 +239,8 @@
     </div>
 
     <div id="footer-wrap">
-        <footer>
-        <section>
+        <footer class="container_24">
+        <section class="grid_8">
             <h3>Get a Free Quote</h3>
             <form action="" method="post">
                 <input type="text" name="name" value="Your Name" />
@@ -244,30 +251,30 @@
                 <button> Submit! </button>
             </form>
         </section>
-        <section>
+        <section class="grid_8">
             <h3> Recent Projects </h3>
             <ul>
                 <li>
                     <a href="#">
-                      <img src="http://lorempixum.com/400/200/technics" alt="Recent Project1" />
+                      <img src="http://lorempixum.com/200/150/technics" alt="Recent Project1" />
 <!--                         <img src="img/recentProject1.jpg" alt="Recent Project" /> -->
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="http://lorempixum.com/400/200/technics" alt="Recent Project2" />
+                        <img src="http://lorempixum.com/200/150/technics" alt="Recent Project2" />
 <!--                         <img src="img/recentProject2.jpg" alt="Recent Project" /> -->
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                      <img src="http://lorempixum.com/400/200/technics" alt="Recent Project3" />
+                      <img src="http://lorempixum.com/200/150/technics" alt="Recent Project3" />
 <!--                         <img src="img/recentProject3.jpg" alt="Recent Project" /> -->
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                      <img src="http://lorempixum.com/400/200/technics" alt="Recent Project4" />
+                      <img src="http://lorempixum.com/200/150/technics" alt="Recent Project4" />
 <!--                         <img src="img/recentProject4.jpg" alt="Recent Project" /> -->
                     </a>
                 </li>
@@ -275,7 +282,7 @@
 
             <button> Portfolio </button>
         </section>
-        <section>
+        <section class="grid_8">
             <h3> Twitter Stream </h3>
             <ul>
                 <li>
@@ -295,9 +302,9 @@
         </footer>
     </div>
 
-    <div id="siteInfo">
+    <div id="siteInfo" class="container_24">
         <p>Copyright '10' -- Tech Addict Blog -- All Rights Reserved</p>
-        <nav>
+        <nav class="grid_17">
             <ul>
                 <li>
                     <a href="#">HOME</a>
