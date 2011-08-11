@@ -33,6 +33,10 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-weight: normal;
 }
+    h1 a { 
+        font-family: 'Oswald', helvetica, arial, sans-serif;
+        font-size: 50px;
+    }
 
 h3 {
     color: #3da2b4;
@@ -68,19 +72,20 @@ li {
  *  HEADER
 *********************/
 
-header {
+#header {
     background: black;
     overflow: hidden;
     color: white;
+    text-align: center;
 }
 
-    header h1 {
+    #header h1 {
         padding-top: 30px;
         text-shadow: 0 -1px 0 #d09539;
         font-size: 30px;
     }
 
-        header h1 a {
+        #header h1 a {
             color: white;
         }
 
@@ -88,7 +93,7 @@ header {
      * NAV 
     *********************/
 
-    header nav {
+    #header nav {
         overflow: hidden;
         float: left;
         margin-top: 5px;
@@ -96,19 +101,19 @@ header {
         line-height: 58px;
     }
 
-    header nav li {
+    #header nav li {
         float: left;
         margin-right: 25px;
     }
 
-        header nav a {
+        #header nav a {
             font-size: 16px;
             color: white;
             text-shadow: 0 1px 0 #281f1b;
             padding: 4px;
         }
 
-        header nav a:hover, nav .selected {
+        #header nav a:hover, nav .selected {
             background: #EFB04F;
             text-decoration: none;
             border-bottom: none;
@@ -161,12 +166,12 @@ header {
  *  HEADER FORM
 *********************/
 
-header form {
+#header form {
     float: right;
     margin-top: 19px;
 }
 
-    header form p {
+    #header form p {
         font-weight:bold;
         text-transform:uppercase;
         text-shadow: 0 -1px 0 black;
@@ -174,7 +179,7 @@ header form {
         position: relative;
     }
 
-    header input {
+    #header input {
         background: #247083;
         background: url(../img/searchIcon.png) 100% 48% no-repeat,  -webkit-gradient(linear, left top, left bottom, from(#247083), to(#339aa7));
 
@@ -195,4 +200,44 @@ header form {
         color: white;
         margin-left: 5px;
 }
+
+
+/*********************
+ *  BANNER-WRAP
+*********************/
+#banner {
+    background: grey;
+    text-align: center;
+}
+
+/*********************
+ * Main 
+*********************/
+#main {
+    background: grey;
+}
+
+/*********************
+ * Main 
+*********************/
+#footer {
+    background: grey;
+}
+
+    #footer img {
+        float: left;
+    }
+
+
+/*********************
+ * Site Info
+*********************/
+#siteInfo {
+    background: black;
+    color: white;
+}
+    #siteInfo a {
+        color: white;
+    }
+
 
