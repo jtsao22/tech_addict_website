@@ -214,19 +214,34 @@ li {
  * Main 
 *********************/
 #main {
-    background: grey;
+    background: black;
+    color: white;
 }
 
 /*********************
  * Main 
 *********************/
 #footer {
-    background: grey;
+    background: black;
+    color: white;
 }
 
     #footer img {
         float: left;
     }
+
+/*********************
+ * Aside
+*********************/
+aside {
+    background: black;
+    color: white;
+}
+
+    aside a {
+        color: white;
+    }
+
 
 
 /*********************
