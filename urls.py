@@ -18,8 +18,9 @@ from django.conf import settings
 import os
 
 urlpatterns = patterns('',
-    (r'^$', 'index'),
-    (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT})
+    (r'^$', 'tech_blog.views.index'),
+    (r'^site_media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
+    (r'^favicon.ico$', 'tech_blog.views.error')
     # Example:;
     # (r'^foo/', include('foo.urls')),
 
