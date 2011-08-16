@@ -1,10 +1,10 @@
 # Create your views here.
 '''
 
-File: tech_blog.views.py
+File: tech_addict.views.py
 
 Description:
-    Views specifically used for my tech blog.
+    Views specifically used for my django app.
 
 '''
 
@@ -19,3 +19,7 @@ def error(request):
     ''' This function serves all pages that do not match the urls in the urlconf '''
 
     return HttpResponse("<p> Page not found </p>")
+
+def static_page(response, template):
+    template = "%s.html" % (template)
+    return render_to_response(template)

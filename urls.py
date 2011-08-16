@@ -12,15 +12,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Imports
 from django.conf.urls.defaults import *
 from django.views.static import *
 from django.conf import settings
+from views import static_page
 import os
 
+# Urlconf
 urlpatterns = patterns('',
     (r'^$', 'tech_blog.views.index'),
     (r'^site_media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
-    (r'^favicon.ico$', 'tech_blog.views.error')
+    (r'^favicon.ico$', 'tech_blog.views.error'),
+    (r'^(?P<template>\w+)/$', static_page)
     # Example:;
     # (r'^foo/', include('foo.urls')),
 

@@ -40,7 +40,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 h3 {
-    color: #3da2b4;
+    /*color: #3da2b4;*/
+    color: #0D4E85;
     text-shadow: 0 -1px 0 #231914;
     font-size: 24px;
     line-height: 24px;
@@ -90,11 +91,19 @@ li {
             color: white;
         }
 
+#top_bar {
+    margin-left: -4px;
+    margin-right: -4px;
+    background: #C0C0CC;
+    overflow: hidden;
+}
+
     /*********************
      * NAV 
     *********************/
 
     #header nav {
+        background: 
         overflow: hidden;
         float: left;
         margin-top: 5px;
@@ -221,20 +230,91 @@ li {
  * Main 
 *********************/
 #main {
-    background: black;
-    color: white;
+    padding-top: 50px;
+    /*background: #f8eedf;*/
+    background: #0D4E85;
+    background: 
+        -webkit-gradient(
+            linear,
+            left top, right top,
+            from(#0D4E85),
+            color-stop(63.5%, #0D4E85),
+            color-stop(63.6%, #001C3A)
+            /*color-stop(63.6%, #fff7ea),*/
+            /*color-stop(63.7%, #dfcdb2),*/
+            /*color-stop(63.7%, #e8d8c0),*/
+            /*to(#f8eedf)*/
+    );
+
+    background: 
+        -moz-linear-gradient(
+            left,
+            #0D4E85 63.5%,
+            #001C3A 63.6%
+            /*#f8eedf 63.5%,*/
+            /*#fff7ea 63.6%,*/
+            /*#dfcdb2 63.7%,*/
+            /*#e8d8c0 63.7%,*/
+            /*#f8eedf */
+
+    );
+
+    background: 
+        linear-gradient(
+            left,
+            #0D4E85 63.5%,
+            #001C3A 63.6%
+            /*#f8eedf 63.5%,*/
+            /*#fff7ea 63.6%,*/
+            /*#dfcdb2 63.7%,*/
+            /*#e8d8c0 63.7%,*/
+            /*#f8eedf */
+
+    );
+
+    overflow: hidden;
+
 }
-    #main a {
-        color: #3da2b4;
+
+    #main article {
+        padding-right: 50px;
     }
 
+        #main article img {
+            margin: 0 0 10px;
+        }
+
+        article h2 {
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+
+        article h2 a {
+            color: white;
+        }
+
+        article h2 a:hover {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        article h6 a, article h6 { 
+            color: #d6a75d;
+            font-style: italic;
+        }
+
 /*********************
- * Main 
+ * Footer
 *********************/
 #footer {
-    background: black;
+    /*background: black;*/
+    background: #C0C0CC;
     color: white;
 }
+    #footer section {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 
     #footer img {
         float: left;
@@ -243,15 +323,21 @@ li {
 /*********************
  * Aside
 *********************/
-aside {
-    background: black;
-    color: white;
+#secondary section {
+    clear: both;
+    /*background: red;*/
+    margin-bottom: 40px;
 }
-
-    aside a {
-        color: white;
+    #secondary section img {
+        float: left;
     }
 
+    /* TABS */
+    .tabs {
+        overflow: hidden;
+        /*background: #257588;*/
+        margin-right: 25px;
+    }
 
 
 /*********************

@@ -31,61 +31,63 @@
             <!--<img src="http://lorempixum.com/800/200/technics" alt="Featured" />-->
         <!--</div>-->
 
-        <nav class="grid_17">
-            <ul>
-                <li>
-                    <a href="#" class="selected">HOME</a>
-                </li>
-                <li>
-                    <a href="#">ABOUT</a>
-                </li>
-                <li>
-                    <a href="#">PORTFOLIO</a>
-                </li>
-                <li>
-                    <a href="#">BLOG</a>
-                </li>
-                <li>
-                    <a href="#">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
+        <div id="top_bar" class="rounded">
+            <nav class="grid_17">
+                <ul>
+                    <li>
+                        <a href="#" class="selected">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="#">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
 
-        <!--<menu>-->
-            <!--<ul id="headSocial">-->
-                <!--<li>-->
-                    <!--<a href="#">-->
-<!--[>                         <img src="img/icons/facebook.png" alt="Facebook" /> <]-->
-                      <!--<img src="http://lorempixum.com/35/35" alt="Facebook" />-->
-                    <!--</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a href="#">-->
-<!--[>                         <img src="img/icons/dribble.png" alt="Dribble" /> <]-->
-                        <!--<img src="http://lorempixum.com/35/35" alt="Dribble" />-->
-                    <!--</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a href="#">-->
-                        <!--<img src="http://lorempixum.com/35/35" alt="Twitter" />-->
-<!--[>                         <img src="imgs/icons/twitter.png" alt="Twitter" /> <]-->
-                    <!--</a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a href="#">-->
-                        <!--<img src="http://lorempixum.com/35/35" alt="Flickr" />-->
-<!--[>                         <img src="imgs/icons/flickr.png" alt="Flickr" /> <]-->
-                    <!--</a>-->
-                <!--</li>-->
-            <!--</ul>-->
-        <!--</menu>-->
+            <!--<menu>-->
+                <!--<ul id="headSocial">-->
+                    <!--<li>-->
+                        <!--<a href="#">-->
+<!--    [>                         <img src="img/icons/facebook.png" alt="Facebook" /> <]-->
+                          <!--<img src="http://lorempixum.com/35/35" alt="Facebook" />-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">-->
+<!--    [>                         <img src="img/icons/dribble.png" alt="Dribble" /> <]-->
+                            <!--<img src="http://lorempixum.com/35/35" alt="Dribble" />-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">-->
+                            <!--<img src="http://lorempixum.com/35/35" alt="Twitter" />-->
+<!--    [>                         <img src="imgs/icons/twitter.png" alt="Twitter" /> <]-->
+                        <!--</a>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<a href="#">-->
+                            <!--<img src="http://lorempixum.com/35/35" alt="Flickr" />-->
+<!--    [>                         <img src="imgs/icons/flickr.png" alt="Flickr" /> <]-->
+                        <!--</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</menu>-->
 
-        <form action="" method="get" class="grid_7">
-            <p>
-                Search: <input type="text" name="search" value="" id="search" placeholder="Search"/>
-            </p>
-        </form>
-    <!--</header>-->
+                <form action="" method="get" class="grid_7">
+                    <p>
+                        Search: <input type="text" name="search" value="" id="search" placeholder="Search"/>
+                    </p>
+                </form>
+        </div>
+        <!--</header>-->
     </div>
 
     <!--<div id="banner-wrap">-->
@@ -108,9 +110,9 @@
 
     <!--</div> [> end banner-wrap <]-->
 
-    <div id="main" class="container_24">
+    <div id="main" class="container_24 rounded">
         <div id="primary" class="grid_15">
-            <article>
+            <article class="rounded">
                 <h2>
                     <a href="#"> Blog Post Name Here</a>
                     <h6> August 4th, 2011 | <a href="#">10 Comments</a></h6>
@@ -142,7 +144,7 @@
 
             <button> The Blog </button>
         </div>
-        <aside class="grid_8 prefix_1">
+        <aside id="secondary" class="grid_8 prefix_1">
            <ul id="tabHeadings">
                <li>
                    <a href="#comments">Comments</a>
@@ -155,6 +157,7 @@
                </li>
            </ul>
 
+           <section class="tabs rounded">
             <ul id="comments">
                 <ul>
                     <li>
@@ -212,6 +215,7 @@
                     <a href="#">Archive</a>
                 </li>
             </ul>
+            </section>
 
             <section>
                 <h3>Who I am </h3>
@@ -239,7 +243,7 @@
     </div>
 
     <div id="footer-wrap">
-        <div id="footer" class="container_24">
+        <div id="footer" class="container_24 rounded"">
         <section class="grid_8">
             <h3>Get a Free Quote</h3>
             <form action="" method="post">
@@ -251,7 +255,7 @@
                 <button> Submit! </button>
             </form>
         </section>
-        <section class="grid_8">
+        <section class="grid_8" id="recentProjects">
             <h3> Recent Projects </h3>
             <ul>
                 <li>
