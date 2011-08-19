@@ -1,3 +1,4 @@
+{% extends "index.html" %}
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -7,24 +8,8 @@
 
 	</head>
 	<body>
-		<div>
-			<header>
-				<h1>techno_view</h1>
-			</header>
-			<nav>
-				<p>
-					<a href="/">Home</a>
-				</p>
-				<p>
-					<a href="/contact">Contact</a>
-				</p>
-			</nav>
-			<div></div>
-			<footer>
-				<p>
-					&copy; Copyright 2011 by Jason Tsao
-				</p>
-			</footer>
-		</div>
+        <div id="header" class="container_24">
+        {% block header %} {% endblock %}
+        </div>
 	</body>
 </html>

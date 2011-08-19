@@ -22,8 +22,8 @@
 </head>
 
 <body id="content">
-
-    <div id="header" class="container_24">
+    <div id="header" class="container_24" >
+    {% block header %}{% endblock %}
     <h1> <a href="#"> Tech Addiction </a> </h1>
         <h3> Jason Tsao's Portal for All Things Tech... </h3>
 
@@ -328,6 +328,10 @@
                 </li>
             </ul>
         </nav>
+    </div>
+
+    <div id="end" style="color: white;">
+        <p> End: {{ result }} </p>
     </div>
 
 
