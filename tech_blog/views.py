@@ -12,13 +12,15 @@ def index(request):
     #post.slug = "www.jtsao22.appspot.com";
     post.put()
 
-    result = "";
     posts = Post.all()
 
     for p in posts.fetch(limit=40):
-        result += p.title + " has a body of: " + p.body + "\n"
+        #result.title = p.title;
+        #result.body = p.body;
+        #result.published = p.published;
 
-    return render_to_response('index.html', {'result': result})
+        return render_to_response('index.html',
+                {'result': p})
 
 def error(request):
     return HttpResponse("<p> Page not found </p>")

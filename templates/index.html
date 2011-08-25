@@ -114,11 +114,14 @@
         <div id="primary" class="grid_15">
             <article class="rounded">
                 <h2>
-                    <a href="#"> Blog Post Name Here</a>
-                    <h6> August 4th, 2011 | <a href="#">10 Comments</a></h6>
+                    <!--<a href="#"> Blog Post Name Here</a>-->
+                    <a href="#"> {{result.title}}</a>
+                    <!--<h6> August 4th, 2011 | <a href="#">10 Comments</a></h6>-->
+                    <h6> {{result.published}} | <a href="#">10 Comments</a></h6>
                     <img src="http://lorempixum.com/600/200/technics" alt="Blog Post Title" />
 <!--                     <img src="post-image.jpg" alt="Blog Post Title" /> -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque viverra orci, sed pretium odio accumsan eget. Etiam lacinia, magna nec aliquet. <href="#"> Continue Reading </a> </p> 
+                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque viverra orci, sed pretium odio accumsan eget. Etiam lacinia, magna nec aliquet. <href="#"> Continue Reading </a> </p> -->
+                    <p> {{result.body}}<href="#"> Continue Reading </a> </p> 
                 </h2>
             </article>
 
