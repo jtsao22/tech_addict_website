@@ -111,43 +111,53 @@
     <!--</div> [> end banner-wrap <]-->
 
     <div id="main" class="container_24 rounded">
-        <div id="primary" class="grid_15">
+        <div id="primary" class="grid_17">
+
+            {% for post in results %}
             <article class="rounded">
                 <h2>
                     <!--<a href="#"> Blog Post Name Here</a>-->
-                    <a href="#"> {{result.title}}</a>
+                    <a href="#">{{ post.title }}</a>
                     <!--<h6> August 4th, 2011 | <a href="#">10 Comments</a></h6>-->
-                    <h6> {{result.published}} | <a href="#">10 Comments</a></h6>
-                    <img src="http://lorempixum.com/600/200/technics" alt="Blog Post Title" />
+                    <h6> {{post.published}} | <a href="#">10 Comments</a></h6>
+                    <img src="http://lorempixum.com/660/200/technics" alt="Blog Post Title" align="middle"/>
 <!--                     <img src="post-image.jpg" alt="Blog Post Title" /> -->
                     <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque viverra orci, sed pretium odio accumsan eget. Etiam lacinia, magna nec aliquet. <href="#"> Continue Reading </a> </p> -->
-                    <p> {{result.body}}<href="#"> Continue Reading </a> </p> 
+                <p> {{post.body}}<p>
+                <href="#"> Continue Reading </a>
                 </h2>
             </article>
+            {% endfor %}
 
-            <article>
-                <h2>
-                    <a href="#"> Blog Post Name Here</a>
-                    <h6> August 4th, 2011 | <a href="#">10 Comments</a></h6>
-                    <img src="http://lorempixum.com/600/200/technics" alt="Blog Post Title" />
-<!--                     <img src="post-image.jpg" alt="Blog Post Title" /> -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque viverra orci, sed pretium odio accumsan eget. Etiam lacinia, magna nec aliquet. <href="#"> Continue Reading </a> </p> 
-                </h2>
-            </article>
+            <!--<article>-->
+                <!--<h2>-->
+                    <!--<a href="#"> Blog Post Name Here</a>-->
+                    <!--<h6> August 4th, 2011 | <a href="#">10 Comments</a></h6>-->
+                    <!--<img src="http://lorempixum.com/600/200/technics" alt="Blog Post Title" />-->
+<!--[>                     <img src="post-image.jpg" alt="Blog Post Title" /> <]-->
+                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque viverra orci, sed pretium odio accumsan eget. Etiam lacinia, magna nec aliquet. <href="#"> Continue Reading </a> </p> -->
+                <!--</h2>-->
+            <!--</article>-->
 
-            <article>
-                <h2>
-                    <a href="#"> Blog Post Name Here</a>
-                    <h6> August 4th, 2011 | <a href="#">10 Comments</a></h6>
-                    <img src="http://lorempixum.com/600/200/technics" alt="Blog Post Title" />
-<!--                     <img src="post-image.jpg" alt="Blog Post Title" /> -->
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque viverra orci, sed pretium odio accumsan eget. Etiam lacinia, magna nec aliquet. <href="#"> Continue Reading </a> </p> 
-                </h2>
-            </article>
-
-            <button> The Blog </button>
+            <!--<article>-->
+                <!--<h2>-->
+                    <!--<a href="#"> Blog Post Name Here</a>-->
+                    <!--<h6> August 4th, 2011 | <a href="#">10 Comments</a></h6>-->
+                    <!--<img src="http://lorempixum.com/600/200/technics" alt="Blog Post Title" />-->
+<!--[>                     <img src="post-image.jpg" alt="Blog Post Title" /> <]-->
+                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque viverra orci, sed pretium odio accumsan eget. Etiam lacinia, magna nec aliquet. <href="#"> Continue Reading </a> </p> -->
+                <!--</h2>-->
+            <!--</article>-->
         </div>
-        <aside id="secondary" class="grid_8 prefix_1">
+        <aside id="secondary" class="grid_6 prefix_1">
+            <section>
+                <h3>Who I am </h3>
+                <img src="http://lorempixum.com/150/150/nightlife" alt="Who I Am" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                scelerisque viverra orci, sed pretium odio accumsan eget. Etiam lacinia,
+                magna nec aliquet. <a href="#">Read More...</a></p>
+            </section>
+
            <ul id="tabHeadings">
                <li>
                    <a href="#comments">Comments</a>
@@ -220,12 +230,6 @@
             </ul>
             </section>
 
-            <section>
-                <h3>Who I am </h3>
-                <img src="http://lorempixum.com/300/200/nightlife" alt="Who I Am" />
-<!--                 <img src="img/WhoIAm.jpg" alt="Who I Am" /> -->
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque viverra orci, sed pretium odio accumsan eget. Etiam lacinia, magna nec aliquet. <href="#">Read More...</a></p>
-            </section>
 
 <!--             <section id="sponsors"> -->
 <!--                 <h3> Sponsors</h3> -->
@@ -248,15 +252,20 @@
     <div id="footer-wrap">
         <div id="footer" class="container_24 rounded"">
         <section class="grid_8">
-            <h3>Get a Free Quote</h3>
-            <form action="" method="post">
-                <input type="text" name="name" value="Your Name" />
-                <input type="text" name="email" value="Your Email" />
-                <textarea name="projectDetail"> Your Project Details. </textarea>
-                <input type="text" name="timescale" value="Your Timescale" />
+            <h3>Read it Later Sites</h3>
+            <ul>
+                <li>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque viverra orci, sed pretium odio accumsan eget. Etiam lacinia, magna nec aliquet. <span> <a href="#"> 5 Hours Ago </a>, via Tweetdeck. </span></p>
+                </li>
+                <li>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque viverra orci, sed pretium odio accumsan eget. Etiam lacinia, magna nec aliquet. <span> <a href="#"> 5 Hours Ago </a>, via Tweetdeck. </span></p>
+                </li>
+                <li>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque viverra orci, sed pretium odio accumsan eget. Etiam lacinia, magna nec aliquet. <span> <a href="#"> 5 Hours Ago </a>, via Tweetdeck. </span></p>
+                </li>
+            </ul>
 
-                <button> Submit! </button>
-            </form>
+            <button> See more </button>
         </section>
         <section class="grid_8" id="recentProjects">
             <h3> Recent Projects </h3>
@@ -331,10 +340,6 @@
                 </li>
             </ul>
         </nav>
-    </div>
-
-    <div id="end" style="color: white;">
-        <p> End: {{ result }} </p>
     </div>
 
 

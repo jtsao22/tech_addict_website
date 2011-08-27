@@ -23,6 +23,10 @@ a:hover {
     text-decoration:: underline;
 }
 
+img {
+    align: middle;
+}
+
 p {
     font-size: 12px;
     line-height: 18px;
@@ -238,23 +242,27 @@ li {
             linear,
             left top, right top,
             from(#0D4E85),
-            color-stop(63.5%, #0D4E85),
-            color-stop(63.6%, #001C3A)
-            /*color-stop(63.6%, #fff7ea),*/
-            /*color-stop(63.7%, #dfcdb2),*/
-            /*color-stop(63.7%, #e8d8c0),*/
+            color-stop(70.5%, #0D4E85),
+            /*color-stop(63.6%, #C0C0CC)*/
+            color-stop(70.6%, #FFAC00)
+
+            /*color-stop(70.6%, #001C3A)*/
+            /*color-stop(70.6%, #fff7ea),*/
+            /*color-stop(70.7%, #dfcdb2),*/
+            /*color-stop(70.7%, #e8d8c0),*/
             /*to(#f8eedf)*/
     );
 
     background: 
         -moz-linear-gradient(
             left,
-            #0D4E85 63.5%,
-            #001C3A 63.6%
-            /*#f8eedf 63.5%,*/
-            /*#fff7ea 63.6%,*/
-            /*#dfcdb2 63.7%,*/
-            /*#e8d8c0 63.7%,*/
+            #0D4E85 70.5%,
+            #FFAC00 70.6%
+            /*#001C3A 70.6%*/
+            /*#f8eedf 70.5%,*/
+            /*#fff7ea 70.6%,*/
+            /*#dfcdb2 70.7%,*/
+            /*#e8d8c0 70.7%,*/
             /*#f8eedf */
 
     );
@@ -262,12 +270,13 @@ li {
     background: 
         linear-gradient(
             left,
-            #0D4E85 63.5%,
-            #001C3A 63.6%
-            /*#f8eedf 63.5%,*/
-            /*#fff7ea 63.6%,*/
-            /*#dfcdb2 63.7%,*/
-            /*#e8d8c0 63.7%,*/
+            #0D4E85 70.5%,
+            #FFAC00 70.6%
+            /*#001C3A 70.6%*/
+            /*#f8eedf 70.5%,*/
+            /*#fff7ea 70.6%,*/
+            /*#dfcdb2 70.7%,*/
+            /*#e8d8c0 70.7%,*/
             /*#f8eedf */
 
     );
@@ -277,11 +286,11 @@ li {
 }
 
     #main article {
-        padding-right: 50px;
+        padding-right: 20px;
     }
 
         #main article img {
-            margin: 0 0 10px;
+            /*margin: 0 0 10px;*/
         }
 
         article h2 {
@@ -289,7 +298,7 @@ li {
             font-weight: normal;
         }
 
-        article h2 a {
+        #main article h2 a,p {
             color: white;
         }
 
@@ -323,13 +332,16 @@ li {
 /*********************
  * Aside
 *********************/
+#secondary {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 #secondary section {
     clear: both;
     /*background: red;*/
     margin-bottom: 40px;
 }
     #secondary section img {
-        float: left;
     }
 
     /* TABS */
@@ -338,7 +350,6 @@ li {
         /*background: #257588;*/
         margin-right: 25px;
     }
-
 
 /*********************
  * Site Info

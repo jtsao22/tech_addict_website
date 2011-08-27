@@ -22,6 +22,8 @@ import os
 # Urlconf
 urlpatterns = patterns('',
     (r'^$', 'tech_blog.views.index'),
+    (r'^publish/$',
+    'tech_blog.views.publish'),
     (r'^site_media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
     (r'^favicon.ico$', 'tech_blog.views.error'),
     (r'^(?P<template>\w+)/$', static_page)
