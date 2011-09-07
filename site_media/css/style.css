@@ -122,12 +122,12 @@ li {
 
     #header nav a {
         font-size: 16px;
-        color: white;
+        color: #0D4E85;
         text-shadow: 0 1px 0 #281f1b;
         padding: 4px;
     }
 
-        #header nav a:hover, nav .selected {
+        #header nav a:hover {
             background: #EFB04F;
             text-decoration: none;
             border-bottom: none;

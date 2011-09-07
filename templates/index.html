@@ -19,6 +19,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 
     <title>Tech Addiction</title>
+
+    <link rel="stylesheet" type="text/css" href="http://www.webputty.net/css/agtzfmNzc2ZpZGRsZXIMCxIEUGFnZRjNyhUM" />
+    <script type="text/javascript">(function(w,d){if(w.location!=w.parent.location||w.location.search.indexOf('__preview_css__')>-1){var t=d.createElement('script');t.type='text/javascript';t.async=true;t.src='http://www.webputty.net/js/agtzfmNzc2ZpZGRsZXIMCxIEUGFnZRjNyhUM';(d.body||d.documentElement).appendChild(t);}})(window,document);</script>
+    
 </head>
 
 <body id="content">
@@ -119,11 +123,11 @@
                     <!--<a href="#"> Blog Post Name Here</a>-->
                     <a href="#">{{ post.title }}</a>
                     <!--<h6> August 4th, 2011 | <a href="#">10 Comments</a></h6>-->
-                    <h6> {{post.published}} | <a href="#">10 Comments</a></h6>
+                    <h6> {{post.published|date:"F j, Y"}} | <a href="#"> 0 Comments</a></h6>
                     <img src="http://lorempixum.com/660/200/technics" alt="Blog Post Title" align="middle"/>
 <!--                     <img src="post-image.jpg" alt="Blog Post Title" /> -->
                     <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque viverra orci, sed pretium odio accumsan eget. Etiam lacinia, magna nec aliquet. <href="#"> Continue Reading </a> </p> -->
-                <p> {{post.body}}<p>
+                <p> {{post.body|escape|linebreaks}}<p>
                 <href="#"> Continue Reading </a>
                 </h2>
             </article>
