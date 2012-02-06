@@ -24,7 +24,7 @@ urlpatterns = patterns('',
     (r'^$', 'tech_blog.views.index'),
     (r'^publish/$', 'tech_blog.views.publish'),
     (r'^favicon.ico$', 'tech_blog.views.error'),
-    (r'^web_crawler/', include('django_web_crawler.urls')),
+    (r'^web_crawler/$', include('django_web_crawler.urls')),
     (r'^site_media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
     (r'^(?P<template>\w+)/$', static_page),
 

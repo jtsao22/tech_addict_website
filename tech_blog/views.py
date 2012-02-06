@@ -2,6 +2,7 @@
 
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response
+from django.core.context_processors import csrf
 from tech_blog.models import *
 from tech_blog.forms import PostForm
 from google.appengine.ext import db;
@@ -19,14 +20,19 @@ def index(request):
         result['published'] = p.published;
         results.append(result)
 
+    c = {'results': results}
+    c.update(csrf(request))
 
-    return render_to_response('index.html', {'results': results})
+    return render_to_response('index.html', c)
 
 def publish(request):
 
     if request.method == 'GET':
         form = PostForm()
-        return render_to_response('publish.html', {'form': form})
+        c = {'form': form}
+        c.update(csrf(request))
+
+        return render_to_response('publish.html', c)
     else:
         form = PostForm(request.POST)
         if form.is_valid():
