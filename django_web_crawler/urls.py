@@ -16,18 +16,9 @@
 from django.conf.urls.defaults import *
 from django.views.static import *
 from django.conf import settings
-from views import static_page
-import os
 
 # Urlconf
-urlpatterns = patterns('',
-    (r'^$', 'tech_blog.views.index'),
-    (r'^publish/$', 'tech_blog.views.publish'),
-    (r'^favicon.ico$', 'tech_blog.views.error'),
-    (r'^web_crawler/', include('django_web_crawler.urls')),
-    (r'^site_media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
-    (r'^(?P<template>\w+)/$', static_page),
-
-    # Uncomment this for admin:;
-#     (r'^admin/', include('django.contrib.admin.urls')),
+urlpatterns = patterns('django_web_crawler.views',
+    (r'^$', 'index'),
+    (r'^results/$', 'results'),
 )
