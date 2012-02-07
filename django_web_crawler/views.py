@@ -2,7 +2,6 @@
 
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response
-from django.core.context_processors import csrf
 from django import forms
 from google.appengine.api import memcache
 import logging
@@ -19,12 +18,12 @@ def index(request):
     """ This view shows the form """
     form = CrawlerForm()
     c = {'form':form}
-    c.update(csrf(request))
     return render_to_response('django_web_crawler/web_crawler_form.html', c)
 
 def results(request):
     """ This views shows the results of the crawl """
     form = CrawlerForm(request.POST)
+    c = {}
     if form.is_valid():
         url = form.cleaned_data['url']
         depth = form.cleaned_data['depth']
@@ -41,7 +40,6 @@ def results(request):
 
         web_crawl.find_urls_with_search_text(str(url), depth, search_text, urls_with_search_text);
 
-    c = {'data': urls_with_search_text}
-    c.update(csrf(request))
+        c = {'data': urls_with_search_text}
 
     return render_to_response('django_web_crawler/results.html', c)
